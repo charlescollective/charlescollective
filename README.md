@@ -1,2 +1,2 @@
-# staging
-Charles Collective staging site. All rights reserved.
+# Charles Collective staging site
+All rights reserved.
