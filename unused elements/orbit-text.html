@@ -1,0 +1,108 @@
+<div class="orbit-mask"></div>
+
+<div class="orbit-container">
+    <div class="orbit">
+      <span class="animated-span" style="--i:1">T</span>
+      <span class="animated-span" style="--i:2">R</span>
+      <span class="animated-span" style="--i:3; ">U</span>
+      <span class="animated-span" style="--i:4">S</span>
+      <span class="animated-span" style="--i:5; ">T</span>
+      <span class="animated-span" style="--i:6">E</span>
+      <span class="animated-span" style="--i:7">D</span>
+      <span class="animated-span" style="--i:8; opacity: 0!important;">-</span>
+      <span class="animated-span" style="--i:9">W&nbsp;&nbsp;</span>
+      <span class="animated-span" style="--i:10">O</span>
+      <span class="animated-span" style="--i:11">R</span>
+      <span class="animated-span" style="--i:12">L&nbsp;</span>
+      <span class="animated-span" style="--i:13">D&nbsp;&nbsp;</span>
+      <span class="animated-span" style="--i:14">W</span>
+      <span class="animated-span" style="--i:15">I</span>
+      <span class="animated-span" style="--i:16; transform: translate3d(-30%, -50%, 0px) rotateY(calc(var(--i) * 10deg)) translateZ(300px);">D</span>
+      <span class="animated-span" style="--i:17; transform: translate3d(-30%, -50%, 0px) rotateY(calc(var(--i) * 10deg)) translateZ(300px);">E</span>
+      <span class="animated-span" style="--i:18; transform: translate3d(-50%, -55%, 0px) rotateY(calc(var(--i) * 10deg)) translateZ(300px);">&nbsp;&nbsp;-&nbsp;</span>
+      <span class="animated-span" style="--i:19">T</span>
+      <span class="animated-span" style="--i:20">R</span>
+      <span class="animated-span" style="--i:21; ">U</span>
+      <span class="animated-span" style="--i:22">S</span>
+      <span class="animated-span" style="--i:23; ">T</span>
+      <span class="animated-span" style="--i:24">E</span>
+      <span class="animated-span" style="--i:25">D</span>
+      <span class="animated-span" style="--i:26; opacity: 0!important;">-</span>
+      <span class="animated-span" style="--i:27">W&nbsp;&nbsp;</span>
+      <span class="animated-span" style="--i:28">O</span>
+      <span class="animated-span" style="--i:29">R</span>
+      <span class="animated-span" style="--i:30">L&nbsp;</span>
+      <span class="animated-span" style="--i:31">D&nbsp;&nbsp;</span>
+      <span class="animated-span" style="--i:32">W</span>
+      <span class="animated-span" style="--i:33">I</span>
+      <span class="animated-span" style="--i:34; transform: translate3d(-65%, -50%, 0px) rotateY(calc(var(--i) * 10deg)) translateZ(300px);">D</span>
+      <span class="animated-span" style="--i:35; transform: translate3d(-65%, -50%, 0px) rotateY(calc(var(--i) * 10deg)) translateZ(300px);">E</span>
+      <span class="animated-span" style="--i:36; transform: translate3d(-50%, -55%, 0px) rotateY(calc(var(--i) * 10deg)) translateZ(300px);">&nbsp;&nbsp;-&nbsp;</span>
+    </div>
+  </div>
+
+
+  <style>
+    .orbit-container {
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg) translateY(50px);
+}
+
+.orbit {
+  transform-style: preserve-3d;
+  height: 100%;
+  animation: orbit 10s linear infinite;
+  transform: perspective(2500px) rotateY(360deg) rotate(0deg);
+}
+
+
+.orbit span {
+  transform-style: preserve-3d;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0px) rotateY(calc(var(--i) * 10deg)) translateZ(300px);
+  top: 50%;
+  left: 50%;
+  color: var(--light);
+  font-size: 70px;
+}
+
+.orbit-mask {
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--dark);
+  width: 400px;
+  height: 400px;
+  filter: blur(30px);
+}
+
+  </style>
+
+
+
+
+
+
+  <script>
+    gsap.to(".orbit-container", {
+   rotationX: '10deg',
+   translateY: '-50px',
+   scrollTrigger: {
+     trigger: ".orbit-container",
+     start: "top bottom",
+     end: "bottom top",
+     scrub: true,
+   },
+ });
+ 
+
+ gsap.to(".orbit", {
+   rotationY: -360,
+   duration: 20,
+   repeat: -1,
+   ease: "linear"
+ });
+  </script>

@@ -1,0 +1,188 @@
+<section class="selected-work-container">
+
+    <a class="selected-work selected-work-1" href="About.html">
+      <img class="work-image work-image-1" src="assets/trail/3.webp" alt="coreix image">
+      <div class="work-tabs-container">
+        <p class="work-tabs work-tabs-brand">COREIX</p>
+        <p class="work-tabs work-tabs-type">BRANDING</p>
+      </div>
+    </a>
+
+    <a class="selected-work selected-work-2" href="About.html">
+      <img class="work-image work-image-2" src="assets/trail/7.webp" alt="rh trees image">  
+      <div class="work-tabs-container">
+        <p class="work-tabs work-tabs-brand">RH TREE SERVICES</p>
+        <p class="work-tabs work-tabs-type">BRANDING</p>
+      </div>
+    </a>
+
+    <a class="selected-work selected-work-3" href="About.html">
+      <img class="work-image work-image-3" src="assets/trail/5.webp" alt="envirorally image">
+      <div class="work-tabs-container">
+        <p class="work-tabs work-tabs-brand">ENVIRORALLY</p>
+        <p class="work-tabs work-tabs-type">BRANDING</p>
+      </div>
+    </a>
+
+    <a class="selected-work selected-work-4" href="About.html">
+      <img class="work-image work-image-4" src="assets/trail/4.webp" alt="love food image">
+      <div class="work-tabs-container">
+        <p class="work-tabs work-tabs-brand">COREIX</p>
+        <p class="work-tabs work-tabs-type">BRANDING</p>
+      </div>
+    </a>
+
+    <div class="full-width-cta" style="padding-top: 100px;">
+      <a href="About.html">
+        <h2>View all work</h2>
+      </a>
+    </div>
+
+  </section>
+  
+  
+  /* Selected work styling */
+
+    .selected-work-container a {
+      color: var(--dark);
+    }
+ 
+    .selected-work-container {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 5px;
+      row-gap: 5px;
+      box-sizing: border-box;
+      background-color: #080808;
+      transform: translate(0,0);
+    }
+
+    .selected-work {
+      position: relative;
+      display: block;
+      height: 32vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .selected-work-1, .selected-work-4 {
+      flex: 1 67vw;
+      box-sizing: border-box;
+    }
+
+    .selected-work-2, .selected-work-3 {
+      flex: 1 32vw;
+      box-sizing: border-box;
+    }
+
+    .full-width-cta {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .full-width-cta a {
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
+
+    .full-width-cta a:hover, .full-width-cta a:active {
+      opacity: 1;
+    }
+
+    .full-width-cta h2 {
+      pointer-events: none;
+      text-transform: uppercase;
+      color: var(--light);
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: 1px solid var(--light);
+    }
+
+    .work-image-1, .work-image-4 {
+      width: 68vw;
+      height: 68vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+
+    .work-image-2, .work-image-3 {
+      width: 32vw;
+      height: 32vw;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+
+    .work-image:hover {
+      -webkit-filter: brightness(.6);
+              filter: brightness(.6);
+    }
+  
+    .work-image {
+      -webkit-transition: -webkit-filter .4s, -webkit-transform .4s;
+      transition: -webkit-filter .4s, -webkit-transform .4s;
+      -o-transition: filter .4s, transform .4s;
+      transition: filter .4s, transform .4s;
+      transition: filter .4s, transform .4s, -webkit-filter .4s, -webkit-transform .4s;
+      -webkit-filter: brightness(1);
+              filter: brightness(1);
+    }
+
+    .work-tabs-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 5px;
+      opacity: 0;
+      position: absolute;
+      bottom: -40px;
+      left: 30px;
+      pointer-events: none;
+      -webkit-transition: opacity .1s linear, bottom .2s ease-out;
+      -o-transition: opacity .1s linear, bottom .2s ease-out;
+      transition: opacity .1s linear, bottom .2s ease-out;
+    }
+
+    .selected-work:hover .work-tabs-container {
+      opacity: 1;
+      bottom: 30px;
+    }
+
+    .work-tabs {
+      padding: 5px 15px;
+      border-radius: 50px;
+      -webkit-backdrop-filter: blur(10px);
+              backdrop-filter: blur(10px);
+      background-color: var(--dark);
+      color: rgba(255,255,255,0.7);
+    }
+
+    @media only screen and (max-width: 999px) {
+      .work-image {
+        width: 51vw;
+        height: 51vw;
+      }
+      .selected-work {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 calc(50vw - 2.5px);
+                flex: 1 calc(50vw - 2.5px);
+        height: 50vw;
+      }
+    }
+
+    @media only screen and (max-width: 690px) {
+      .work-image {
+        width: 100vw;
+        height: 100vw;
+      }
+      .selected-work {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 100vw;
+                flex: 1 100vw;
+        height: 100vw;
+      }
+    }

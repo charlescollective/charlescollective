@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Making expert design & advertising accessible to all while forming brands that are destined for success.">
+        <title>V1</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" defer>
+        <link rel="icon" href="assets/logos/charles-icon.png" type="image/x-icon">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+        <script src="metaballs.js" defer></script>
+        <script src="animate.js" defer></script>
+        <script src="sticky.js" defer></script>
+        <script src="lenis.js" defer></script>
+        <script src="lightmode.js" defer></script>
+        <script src="slider.js" defer></script>
+        
+    </head>
+    <body class="colourise-bg">
+        <header>
+            <nav class="navbar">
+              <div class="nav-left">
+                <lottie-player id="logo-lottie" class="logo-lottie" src="assets/animation/charles-logo.json" style="width: 180px; height: auto;" background="transparent" speed="1" autoplay loop></lottie-player>
+              </div>
+              <div class="nav-centre">
+                <p class="mode-item dark-mode-item" title="light mode switch">DARK</p>
+                  <div class="mode-indicator-cont">
+                    <div class="mode-indicator"></div>
+                  </div>
+                <p class="mode-item light-mode-item" title="dark mode switch">LIGHT</p>
+              </div>
+              <div class="nav-right">
+                  <a class="menuitem menuitem-home" href="/change to URL or link">PORTFOLIO</a>
+                  <a class="menuitem menuitem-work" href="change to URL or link">ABOUT</a>
+                  <a class="menuitem menuitem-meet" href="change to URL or link">CONTACT</a>
+              </div>
+            </nav>
+          </header>   
+          
+          <div class="flute-cont">
+            <div class="flute"></div>
+          </div>
+          
+          <section id="main-container" class="main-container">
+            <canvas id="canvas" class="gradient-canvas"></canvas>
+          
+            <div class="intro-row">
+              <p class="madein"><span>MADE IN GUERNSEY,</span><span class="sixty">TRUSTED WORLDWIDE</span></p>
+              <p class="brand"><span>BRAND IDENTITY, DESIGN,</span><span class="sixty">ADVERTISING AND MORE</span></p>
+            </div>
+          
+            <div id="top-title-container" class="top-title-container">
+              <div id="top-title" class="top-title">
+                <div class="top-title1"><h1>YOUR</h1></div>
+                <div class="top-title2"><h1><span>C</span><span class="top-title2-lottie" alt="O"><lottie-player src="assets/animation/o-animation.json" background="transparent" speed="1" style="height: 5.7vw; width: auto; " loop autoplay></lottie-player></span><span>MPLETE</h1></div>
+                <div class="top-title3"><h1>CREATIVE</h1></div>
+                <div class="top-title4"><h1>PARTNER</h1></div>
+              </div>
+            </div>
+          
+            <div class="elasticdiv-cont">
+              <div class="elasticdiv colourise-bg">
+                <div class="flute"></div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="section row2 colourise-full">
+            <div id="sec2-cont">
+              <div id="sec2-title-cont" class="sec2-title-cont">
+                <h2 class="sec2-title">
+                  <span>TRANSF</span><span class="sec2-title-lottie" alt="O"><lottie-player src="assets/animation/o-animation.json" background="transparent" speed="1" style="height: 2.9vw; width: auto; " loop autoplay></lottie-player></span><span>RMING</span>
+                  <span>BRANDS THR</span><span class="sec2-title-lottie" alt="O"><lottie-player src="assets/animation/o-animation.json" background="transparent" speed="1" style="height: 2.9vw; width: auto; " loop autoplay></lottie-player></span><span>UGH</span>
+                  <span>EXPERT DESIGN</span>
+                </h2>
+              </div>
+              <div class="sec2-para-cont">
+                <div class="sec2-icon-cont">
+                  <img class="sec2-icon-1" src="assets/animation/madein.webp" alt="made-in-guernsey" style="height: 100px; width: 100px;">
+                  <img class="sec2-icon-2" src="assets/animation/trusted.webp" alt="trusted-worldwide" style="height: 100px; width: 69.9px;">
+                </div>
+                <p class="sec2-para">
+                  We’ve made it our mission to make expert design & advertising accessible to businesses of all sizes. That’s why we’ve reimagined the creative agency model to deliver end-to-end creative solutions, on a project-basis. By eliminating costly overheads, we add significant opportunities for ROI while forming brands that are destined for success.
+                </p>
+              </div>
+            </div>
+          
+            <div class="logoslider">
+                <div class="logogroup">
+                    <div class="slide"><img src=" assets/logos/Aurigny.svg" alt="Aurigny" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Nike.svg" alt="Nike" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Guernsey Electricity.svg" alt="Guernsey Electricity" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/samsung.svg" alt="Samsung" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/HSBC.svg" alt="HSBC" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Starbucks.svg" alt="Starbucks" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/States of Guernsey.webp" alt="States of Guernsey" style="height: 70px; width: 238.5864px;"></div>
+                    <div class="slide"><img src=" assets/logos/Trust Corporation Intl.svg" alt="Trust Corporation International" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Now.svg" alt="NOW" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Close Finance.svg" alt="Close Finance" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Coreix.svg" alt="Coreix" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/We Are Social.svg" alt="We Are Social" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Tommy Hilfiger.svg" alt="Tommy Hilfiger" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Nissan.svg" alt="Nissan" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Electric Living.svg" alt="Electric Living" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/Activision.svg" alt="Activision" style="height: 70px; width: 301px;"></div>
+                    <div class="slide"><img src=" assets/logos/L'Oreal.svg" alt="L'Oreal" style="height: 70px; width: 301px;"></div>
+                </div>
+            </div>
+          </section>
+          
+          <section class="section row3">
+            <div class="showreel-container">
+              <video class="showreel" src="assets/video/placeholdermin.mp4" poster="assets/video/video-placeholder.webp" loading="lazy" autoplay muted loop></video>
+            </div>
+          </section>
+          
+          <section class="section row4"></section>
+          
+    </body>
+</html>
